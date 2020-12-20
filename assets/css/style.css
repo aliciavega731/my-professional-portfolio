@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styling */
+header {
+  padding: 20px 35px;
+  background-color: #c6dc93;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-image: url(../images/portfolio-background.png);
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 9999;
+}
+
+header h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: #1a512e;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0px;
+}
+
+header a {
+  text-decoration: none;
+  color: #1a512e;
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul a {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+  border-radius: 15px;
+  text-shadow: none;
+}
