@@ -69,9 +69,11 @@ header nav ul li a:hover {
   background-image: url(../images/portfolio-background.png);
   background-size: cover;
   background-position: center;
-  flex-wrap: wrap;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  height: 400px;
 }
 
 .hero-cta {
@@ -95,7 +97,6 @@ header nav ul li a:hover {
 }
 
 /* About Me */
-
 #about-me {
   display: flex;
   flex-direction: row;
@@ -107,13 +108,14 @@ header nav ul li a:hover {
 
 #about-me p {
   padding-left: 25px;
+  font-family: helvetica;
+  line-height: inherit;
+  align-items: center;
 }
 
 img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
   padding: 5px;
-  width: 150px;
+  width: 200px;
 }
 
 .section-title {
@@ -129,6 +131,12 @@ img {
   border-color:  #1a512e;
 }
 
+.body-grid {
+  margin: 10px 10px 10px 20px;
+  flex: 2 80%;
+  flex-wrap: wrap;
+}
+
 #work {
   display: flex;
   flex-direction: row;
@@ -138,22 +146,36 @@ img {
   padding-bottom: 25px;
 }
 
-#contact-me {
+.contact-grid {
   display: flex;
-  flex-direction: row;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  margin: 10px 10px 10px 20px;
+  grid-template-columns: repeat (5, 1fr);
+  grid-template-rows: 1fr;
+  grid-auto-flow: dense;
+  grid-gap: 30px;
 }
 
-#contact-me a {
-  padding: 25px;
-  justify-content: stretch;
-  font-size: 15px;
+.contact-grid a {
+  display: flex;
+  padding: 30px;
+  font-size: 20px;
+  justify-content: space-evenly;
+  align-content: space-between;
+  border-bottom: 5px solid;
+  border-bottom-color: #1a512e;
+  text-decoration: none;
+  color: black;
   font-family: Helvetica;
 }
 
-.flex-container {
+.contact-grid a:hover {
+  border-radius: 5px;
+  text-shadow: none;
+  color: white;
+  background: #1a512e;
+}
+
+.about-grid {
   display: flex;
 }
+
