@@ -33,14 +33,21 @@ body {
 
 #about-me p {
   padding-left: 25px;
-  font-family: helvetica;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: inherit;
   align-items: center;
 }
 
+.about-grid {
+  display: flex;
+}
+
+
+
 img {
   padding: 5px;
   width: 200px;
+  border-radius: 50%;
 }
 
 .section-title {
@@ -62,46 +69,35 @@ img {
   flex-wrap: wrap;
 }
 
-#work {
+/* My work */
+
+.work-text {
+  padding-left: 50px;
+}
+
+#card-stuff {
+  padding-left: 50px;
+}
+
+/* Contact at the bottom */
+.contact-text {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-right: 25px;
+  border-right: #1a512e;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-.contact-grid {
+.contact-grid address {
   display: flex;
-  align-items: flex-end;
-  margin: 10px 10px 10px 20px;
-  grid-template-columns: repeat (5, 1fr);
-  grid-template-rows: 1fr;
-  grid-auto-flow: dense;
-  grid-gap: 30px;
-}
-
-.contact-grid a {
-  display: flex;
-  padding: 30px;
+  flex-direction: row;
+  flex-wrap: nowrap;
   font-size: 20px;
   justify-content: space-evenly;
-  align-content: space-between;
-  border-bottom: 5px solid;
+  align-content: flex-start;
   border-bottom-color: #1a512e;
-  text-decoration: none;
-  color: black;
-  font-family: Helvetica;
-}
-
-.contact-grid a:hover {
-  border-radius: 5px;
-  text-shadow: none;
-  color: white;
-  background: #1a512e;
-}
-
-.about-grid {
-  display: flex;
+  border-bottom-width: thick;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
