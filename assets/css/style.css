@@ -22,27 +22,22 @@ body {
 }
 
 /* About Me */
+
 #about-me {
   display: flex;
   flex-direction: row;
   padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 #about-me p {
   padding-left: 25px;
   font-family: Arial, Helvetica, sans-serif;
-  line-height: inherit;
   align-items: center;
 }
 
 .about-grid {
   display: flex;
 }
-
-
 
 img {
   padding: 5px;
@@ -63,16 +58,17 @@ img {
   border-color:  #1a512e;
 }
 
-.body-grid {
+/* .body-grid {
   margin: 10px 10px 10px 20px;
   flex: 2 80%;
   flex-wrap: wrap;
-}
+} */
 
 /* My work */
 
 .work-text {
   padding-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #card-stuff {
@@ -86,10 +82,11 @@ img {
   flex-wrap: nowrap;
   padding-left: 50px;
   padding-right: 25px;
+  padding-top: 25px;
   border-right: #1a512e;
   font-family: Arial, Helvetica, sans-serif;
 }
-.contact-grid address {
+#contact-me {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
