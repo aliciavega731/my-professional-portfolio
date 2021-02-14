@@ -26,11 +26,14 @@ body {
 #about-me {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   padding-left: 50px;
+  padding-top: 50px;
 }
 
 #about-me p {
-  padding-left: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
   font-family: Arial, Helvetica, sans-serif;
   align-items: center;
 }
@@ -40,7 +43,7 @@ body {
 }
 
 img {
-  padding: 5px;
+  padding: 10px;
   width: 200px;
   border-radius: 50%;
 }
@@ -68,11 +71,13 @@ img {
 
 .work-text {
   padding-left: 50px;
+  padding-top: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 #card-stuff {
   padding-left: 50px;
+  padding-right: 50px;
 }
 
 /* Contact at the bottom */
@@ -92,7 +97,7 @@ img {
   flex-wrap: nowrap;
   font-size: 20px;
   justify-content: space-evenly;
-  align-content: flex-start;
+  align-content: center;
   border-bottom-color: #1a512e;
   border-bottom-width: thick;
   font-family: Arial, Helvetica, sans-serif;
