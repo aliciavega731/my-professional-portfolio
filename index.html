@@ -1,94 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Alicia Vega</title>
-  </head>
-  <body>
-  <!--Header at the top with links-->
-    <header>
-      <h1>ALICIA VEGA</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="#about-me">ABOUT ME</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Using bootstrap to make the website prettier-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Alicia Vega</title>
+</head>
+
+<body>
+
+  <!--Nav bar-->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ALICIA VEGA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#about-me">About Me</a>
           </li>
-          <li>
-            <a href="#work">WORK</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Work</a>
           </li>
-          <li>
-            <a href="#contact-me">CONTACT ME</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-me">Contact Me</a>
           </li>
         </ul>
-      </nav>
-    </header>
+        <span class="navbar-text">
+          Soon-to-Be Professional Web Developer
+        </span>
+      </div>
+    </div>
+  </nav>
+
   <!--Hero-->
   <section class="hero">
     <div class="hero-cta">
-      <h2>Soon-to-Be Professional Web Developer</h2>
     </div>
   </section>
+
   <!--About Me-->
-  <section id="about-me" class="main">
-    <div class="about-grid">
-      <h2 class="section-title primary-border"> About Me</h2>
-      <div class="image">
+    <section id="about-me" class="main">
+      <div class="about-grid">
+        <h2 class="section-title primary-border">About Me</h2>
+        <div class="image">
           <img src="assets/images/photo-of-me.png" alt="photo-of-me">
+        </div>
+        <p>
+          Hello! My name is Alicia Vega and I am an aspiring full-stack web developer. I am currently enrolled and
+          completing the University of Arizona's Coding Bootcamp. I've always wanted to take the plunge and fully dive
+          in to coding and never did until 2020 forced me to explore my hobbies and interests. Here we are and I can't
+          wait to see what comes out of it.
+          <br>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
+        </p>
       </div>
-      <p>
-        Hello! My name is Alicia Vega and I am an aspiring full-stack web developer. I am currently enrolled and completing the University of Arizona's Coding Bootcamp. I've always wanted to take the plunge and fully dive in to coding and never did until 2020 forced me to explore my hobbies and interests. Here we are and I can't wait to see what comes out of it.
-        <br>
-        <br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
-  </section>
-  <!--My work-->
-  <section id="work" class="main">
-    <div class="flex-grid">
-      <h2 class="section-title primary-border">My Work</h2>
-    </div>
-    <div class="body-grid">
-      <div class="work-stuff">
-        <div class="grid run-buddy">
-          <a href="https://github.com/aliciavega731/run-buddy" alt="Run Buddy module practice">
-          <h3 class="link-title">Run Buddy</h3>
-          </a>
-        </div>
-        <div class="grid proj2">
-          <a href="work" alt="Project 2">
-          <h3 class="link-title">Project 2</h3>
-          </a>
-        </div>
-        <div class="grid proj3">
-          <a href="work" alt="Project 3">
-          <h3 class="link-title">Project 3</h3>
-          </a>
-        </div>
-        <div class="grid proj4">
-          <a href="work" alt="Project 4">
-          <h3 class="link-title">Project 4</h3>
-          </a>
-        </div>
-        <div class="grid proj5">
-          <a href="work" alt="Project 5">
-          <h3 class="link-title">Project 5</h3>
-          </a>
+    </section>
+    <!--My work-->
+    <section id="work" class="main">
+      <div class="flex-grid">
+        <h2 class="section-title primary-border">My Work</h2>
+      </div>
+      <div class="body-grid">
+        <div class="work-stuff">
+          <div class="grid run-buddy">
+            <a href="https://github.com/aliciavega731/run-buddy" alt="Run Buddy module practice">
+              <h3 class="link-title">Run Buddy</h3>
+            </a>
+          </div>
+          <div class="grid proj2">
+            <a href="work" alt="Project 2">
+              <h3 class="link-title">Project 2</h3>
+            </a>
+          </div>
+          <div class="grid proj3">
+            <a href="work" alt="Project 3">
+              <h3 class="link-title">Project 3</h3>
+            </a>
+          </div>
+          <div class="grid proj4">
+            <a href="work" alt="Project 4">
+              <h3 class="link-title">Project 4</h3>
+            </a>
+          </div>
+          <div class="grid proj5">
+            <a href="work" alt="Project 5">
+              <h3 class="link-title">Project 5</h3>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!--Contact Me-->
-  <section id="contact-me" class="main">
-    <div class="contact-grid">
-      <h2 class="section-title primary-border"> Contact Me</h2>
-      <a href="tel:520-239-6330">Call me!</a>
-      <a href="https://github.com/aliciavega731">Github</a>
-      <a href="https://www.linkedin.com/in/alicia-vega-0b16b972/">LinkedIn</a>
-      <a href="https://open.spotify.com/user/1267936044?si=f2Zvyo1nQpy1INuNbm18pg">Spotify</a>
-    </div>
-  </section>
-  </body>
+    </section>
+    <!--Contact Me-->
+    <section id="contact-me" class="main">
+      <div class="contact-grid">
+        <h2 class="section-title primary-border"> Contact Me</h2>
+        <a href="tel:520-239-6330">Call me!</a>
+        <a href="https://github.com/aliciavega731">Github</a>
+        <a href="https://www.linkedin.com/in/alicia-vega-0b16b972/">LinkedIn</a>
+        <a href="https://open.spotify.com/user/1267936044?si=f2Zvyo1nQpy1INuNbm18pg">Spotify</a>
+      </div>
+    </section>
+</body>
+
 </html>

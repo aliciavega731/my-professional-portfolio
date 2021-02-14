@@ -5,62 +5,7 @@
 }
 
 body {
-  background-color: #b0d3bf;
-}
-
-/* Header styling */
-header {
-  padding: 20px 35px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: sticky;
-  top: 0;
-  background-image: url(../images/portfolio-background.png);
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: 9999;
-}
-
-header h1 {
-  font-family: Helvetica;
-  font-weight: bold;
-  font-size: 40px;
-  color: #1a512e;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  letter-spacing: 0px;
-}
-
-header a {
-  text-decoration: none;
-  color: #1a512e;
-}
-
-header nav {
-  margin: 7px 0;
-}
-
-header nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-}
-
-header nav ul li a {
-  font-family: Helvetica;
-  padding: 10px 15px;
-  font-weight: lighter;
-  font-size: 1.55vw;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-}
-
-header nav ul li a:hover {
-  border-radius: 10px;
-  text-shadow: none;
-  color: white;
-  background: #1a512e;
+  background-color: whitesmoke
 }
 
 /* Hero */
@@ -73,27 +18,7 @@ header nav ul li a:hover {
   background-repeat: no-repeat;
   justify-content: flex-end;
   flex-wrap: wrap;
-  height: 400px;
-}
-
-.hero-cta {
-  display: flex;
-  text-align: right;
-  line-height: 1.2;
-  min-height: 400px;
-  padding: 15px;
-  justify-content: flex-end;
-  align-items: flex-end;
-  background-size: 300px auto;
-}
-
-.hero-cta h2 {
-  font-size: 40px;
-  font-style: bold;
-  font-family: Helvetica;
-  color: #b0d3bf;
-  text-shadow:  0 0 2px rgb(104, 38, 0);
-  background-color: #3b3709;
+  height: 450px;
 }
 
 /* About Me */
@@ -148,6 +73,7 @@ img {
 
 .contact-grid {
   display: flex;
+  align-items: flex-end;
   margin: 10px 10px 10px 20px;
   grid-template-columns: repeat (5, 1fr);
   grid-template-rows: 1fr;
